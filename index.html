@@ -1432,7 +1432,7 @@ function renderBio(value) {
 }
 
 function loadDiscordBio() {
-  fetch("https://dcdn.dstn.to/profile/254854495698157579")
+  fetch("https://dcdn.dstn.to/profile/")
     .then(function (response) {
       if (!response.ok) throw new Error("DCDN profile request failed: " + response.status);
       return response.json();
